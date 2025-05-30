@@ -1,36 +1,47 @@
 # Desafio_Branching
-Desafio Latam Branching
 
 Habilidades a evaluar
 
-● Realiza operaciones de navegación de directorios, usando los comandos básicos del
-terminal, para crear y manipular archivos y directorios.
+● Realiza operaciones de navegación de directorios, usando los comandos básicos del terminal, para crear y manipular archivos y directorios.
 
-● Aplica las etapas del versionamiento de git, para mantener un repositorio de
-versiones.
+● Aplica las etapas del versionamiento de git, para mantener un repositorio de versiones.
 
-Requerimientos
+## Requerimientos del Proyecto (10 puntos totales)
 
- Iniciar un repositorio mediante el comando de git dentro de la carpeta descargada y
-crear una nueva rama (development) en el repositorio, con el propósito de crear una
-nueva funcionalidad en el proyecto actual, la cual, consistirá en hacer click sobre la
-imagen y ser redirigidos a la página web de GitHub automáticamente (5 Puntos).
+### 1. Configuración Inicial del Repositorio (5 puntos)
 
-● Descargar desde la plataforma el Proyecto base que se llama Apoyo Desafío- Branching.
+#### Preparación
+1. Descargar proyecto base "Apoyo Desafío-Branching"
+2. Inicializar repositorio Git:
+   ```bash
+   git init
+   ```
+3. Primer commit:
+   ```bash
+   git add .
+   git commit -m "Commit inicial"
+   ```
 
-● Inicializar git dentro del proyecto.
+#### Nueva Funcionalidad
+- **Rama**: development
+- **Objetivo**: Implementar redirección a GitHub al hacer click en imagen
 
-● Agregar los archivos a stage y luego generar nuestro primer commit.
+### 2. Manejo de Ramas (5 puntos)
 
-○ Al hacer click en la imagen, serán redirigidos a GitHub.
+#### Pasos a Seguir
+1. Crear rama development:
+   ```bash
+   git checkout -b development
+   ```
+2. Modificar archivo index.html
+3. Staging y commit de cambios:
+   ```bash
+   git add index.html
+   git commit -m "Agregada funcionalidad de redirección"
+   ```
 
-Crear nuevos cambios en nuevas ramas y realizar las combinaciones para ver cómo
-trabajan entre ellas (5 Puntos).
-
-● Crear una nueva rama de desarrollo e implementaremos la funcionalidad.
-
-● Modificar el index.html de nuestro proyecto.
-
-● Agregar los cambios a stage para ser commiteados
-
-● ¿Existe el link en la imagen en la rama master?
+#### Puntos de Verificación
+- [ ] Confirmar inicialización del repositorio
+- [ ] Verificar creación de rama development
+- [ ] Comprobar funcionalidad de redirección
+- [ ] Revisar diferencias entre ramas master y development
